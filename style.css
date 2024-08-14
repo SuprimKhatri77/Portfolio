@@ -82,7 +82,7 @@ nav ul li a:hover:after {
     position: relative;
     width:78vw;
     margin:auto;
-    /* background-color: green; */
+    background-color: green;
     /* background-color:blue; */
 }
 
@@ -172,6 +172,7 @@ nav ul li a:hover:after {
 /* skills section */
 .skills {
     display: flex;
+    
     /* align-items: center;
     justify-content: flex-start; */
     position:absolute;
@@ -185,7 +186,7 @@ nav ul li a:hover:after {
     margin:0 auto 0 11%;
     gap: 70px; */
     gap: 70px;
-    max-width: 100vw;
+    /* max-width: 100vw; */
 
 }
 
@@ -229,6 +230,7 @@ nav ul li a:hover:after {
 /* media queries */
 @media (max-width:900px) {
     .hero {
+        /* margin-top:40px; */
         flex-direction: column;
         height: auto;
         gap:2rem;
@@ -242,14 +244,17 @@ nav ul li a:hover:after {
     max-width:100vw;
 }
     .hero-img {
+        margin-top: 30px;
         width: 20rem;
         height: 20rem;
         order: -1;
     }
     .skills {
         display: flex;
+        width:100%;
+        margin: auto;
         flex-direction: column;
-        left:60px;
+        /* left:60px; */
         /* margin-left:20px; */
         gap:20px;
        
@@ -259,15 +264,42 @@ nav ul li a:hover:after {
         opacity: 0;
     }
 
-    skills ul  li  {
-       
-        display: flex;
-        align-content: center;
+    .skills ul   {
+       display: flex;
+       /* flex-shrink: 4; */
         
         
     
     }
 
+}
+
+@media (width < 575px){
+    .skills ul li img{
+       width:5.5rem;
+        
+    }
+}
+
+@media (width < 510px){
+    .skills ul li img{
+        width:5rem;
+    }
+}
+@media (width < 475px){
+    .skills ul li img{
+        width:4rem;
+    }
+}
+@media (width < 385px){
+    .skills ul li img{
+        width:3rem;
+    }
+}
+@media (width < 800px){
+    .skills ul li{
+        padding-right: 15px;
+    }
 }
 
 
