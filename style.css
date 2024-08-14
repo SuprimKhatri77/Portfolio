@@ -57,7 +57,7 @@ nav ul li a:after {
     content: '';
     height: 3px;
     width: 0;
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
     left: 0;
     bottom: 0;
@@ -82,7 +82,7 @@ nav ul li a:hover:after {
     position: relative;
     width:78vw;
     margin:auto;
-    background-color: green;
+    /* background-color: green; */
     /* background-color:blue; */
 }
 
