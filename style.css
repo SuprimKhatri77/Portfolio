@@ -69,6 +69,12 @@ nav ul li a:hover:after {
     width: 100%;
 }
 
+.menu-icon{
+    font-size: 20px;
+    /* display: none; */
+    position: relative;
+    right:-1000000px;
+}
 /* hero section */
 .hero {
     /* position: relative; */
@@ -303,5 +309,14 @@ nav ul li a:hover:after {
     }
 }
 
+/* for menu icon */
+@media only screen and (max-width:900px){
+    .menu-icon{
+        right:0;
+    }
 
+    nav ul li {
+        display: none;
+    }
+}
 
